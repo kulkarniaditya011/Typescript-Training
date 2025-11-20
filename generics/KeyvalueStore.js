@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 const scores = (() => {
     const data = {};
     return {
@@ -14,4 +12,5 @@ const scores = (() => {
         }
     };
 })();
+export {};
 //# sourceMappingURL=KeyvalueStore.js.map

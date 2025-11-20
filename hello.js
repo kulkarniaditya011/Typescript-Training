@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function greet(name) {
     return `Hello, ${name}!`;
 }
@@ -20,4 +18,5 @@ const person = {
 console.log(`My name is ${person.name} and my blood group is ${person.bloodgroup}`);
 const manager = { role: "Manager", name: "John", username: "john123" };
 console.log(manager);
+export {};
 //# sourceMappingURL=hello.js.map

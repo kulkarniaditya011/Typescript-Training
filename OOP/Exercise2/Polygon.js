@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Polygon {
 }
 class Triangle extends Polygon {
@@ -18,4 +16,5 @@ class Triangle extends Polygon {
 }
 const triangle = new Triangle(3, 4, 5);
 console.log("Perimeter of triangle: ", triangle.getPerimeter());
+export {};
 //# sourceMappingURL=Polygon.js.map

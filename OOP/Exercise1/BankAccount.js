@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class BankAccount {
     accountNumber;
     balance;
@@ -23,4 +21,5 @@ class BankAccount {
 const user1 = new BankAccount("987654321", 1000);
 user1.deposit(500);
 user1.withdraw(200);
+export {};
 //# sourceMappingURL=BankAccount.js.map

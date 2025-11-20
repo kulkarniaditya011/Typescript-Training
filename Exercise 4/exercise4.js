@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class DataStorage {
     data = [];
     addItem(item) {
@@ -18,4 +16,5 @@ function logWithLength(arg) {
 logWithLength("Hello World");
 ;
 logWithLength([1, 2, 3, 4, 5]);
+export {};
 //# sourceMappingURL=exercise4.js.map

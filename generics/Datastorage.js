@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Datastorage {
     data = [];
     additem(item) {
@@ -21,4 +19,5 @@ storeNum.additem(10);
 storeNum.additem(15);
 storeNum.additem(20);
 console.log(storeNum.getLastItem());
+export {};
 //# sourceMappingURL=Datastorage.js.map

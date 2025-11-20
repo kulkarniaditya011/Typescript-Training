@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Product {
     name;
     price;
@@ -23,4 +21,5 @@ class Electronics extends Product {
 const phone = new Electronics("I Phone", 150000, "2 years");
 console.log(`Price after discount: ${phone.discount(10)}`);
 console.log(phone);
+export {};
 //# sourceMappingURL=E-commerce.js.map

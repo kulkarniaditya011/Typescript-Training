@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 class Car {
     brand;
     speed;
@@ -14,4 +12,5 @@ class Car {
 }
 const myCar = new Car("Mercedes G63", 100);
 myCar.accelerate(50);
+export {};
 //# sourceMappingURL=Vehicle.js.map

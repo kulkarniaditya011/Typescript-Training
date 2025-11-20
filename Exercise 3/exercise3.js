@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 function display(value, flag) {
     if (flag) {
         return `The number: ${value} is even`;
@@ -11,4 +9,5 @@ function display(value, flag) {
 console.log(display(5, false));
 console.log(display(8, true));
 console.log(display(10));
+export {};
 //# sourceMappingURL=exercise3.js.map

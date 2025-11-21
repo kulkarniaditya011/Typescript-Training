@@ -5,6 +5,14 @@ interface user{
     email: string;
 }
 
+interface client{
+   id: number;
+  firstName: string;
+  lastName: string;
+  phoneNumber: number;
+  email: string;
+}
+
 async function PostUsers(data: user): Promise<user>{
     try{
         const response = await axios.post( "https://jsonplaceholder.typicode.com/users", data);
@@ -15,9 +23,9 @@ async function PostUsers(data: user): Promise<user>{
     
 }
 
-const fetchUser= async (id: number): Promise<user> =>{
+const fetchUser= async (): Promise<client> =>{
    try{
-     const response = await axios.get<user>(`https://jsonplaceholder.typicode.com/users/${id}`);
+     const response = await axios.get<client>(`http://localhost:8081/api/get`);
      return response.data;
    }catch(error){
      throw new Error(`Error in getting the user ${error}`)
@@ -26,5 +34,5 @@ const fetchUser= async (id: number): Promise<user> =>{
 }
 
 
-PostUsers({name: "Aditya", email: "kulkarniaditya@gmail.com"}).then(console.log).catch(console.error);
-fetchUser(11).then(console.log).catch(console.error);
+//PostUsers({name: "Aditya", email: "kulkarniaditya@gmail.com"}).then(console.log).catch(console.error);
+fetchUser().then(console.log).catch(console.error);
